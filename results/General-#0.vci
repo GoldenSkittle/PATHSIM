@@ -1,0 +1,102 @@
+file 1262699 1526316957                                         
+version 2
+run General-0-20180514-12:55:10-53192
+attr configname General
+attr datetime 20180514-12:55:10
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 53192
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.source.numJobs 10000
+param **.source.interArrivalTime exponential(900.0s)
+param **.queue10.capacity 1
+param **.queue9.capacity 1
+param **.queue8.capacity 1
+param **.queue7.capacity 1
+param **.queue6.capacity 1
+param **.queue5.capacity 1
+param **.queue4.capacity 1
+param **.queue3.capacity 1
+param **.queue2.capacity 1
+param **.queue1.capacity 1
+param **.server10.serviceTime exponential(60.0s)
+param **.server9.serviceTime exponential(60.0s)
+param **.server8.serviceTime exponential(60.0s)
+param **.server7.serviceTime exponential(60.0s)
+param **.server6.serviceTime exponential(60.0s)
+param **.server5.serviceTime exponential(600.0s)
+param **.server4.serviceTime exponential(60.0s)
+param **.server3.serviceTime exponential(60.0s)
+param **.server2.serviceTime exponential(60.0s)
+param **.server1.serviceTime exponential(60.0s)
+param **.server.serviceTime exponential(600.0s)
+param **.delay10.delay exponential(60.0s)
+param **.delay9.delay exponential(60.0s)
+param **.delay8.delay exponential(60.0s)
+param **.delay7.delay exponential(60.0s)
+param **.delay6.delay exponential(60.0s)
+param **.delay5.delay exponential(60.0s)
+param **.delay4.delay exponential(60.0s)
+param **.delay3.delay exponential(60.0s)
+param **.delay2.delay exponential(60.0s)
+param **.delay1.delay exponential(60.0s)
+param **.delay.delay exponential(60.0s)
+
+vector 0 Network.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Network.queue1 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 Network.queue2 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 Network.queue3 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 4 Network.queue4 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 5 Network.queue5 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 6 Network.queue6 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 7 Network.queue7 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 8 Network.queue8 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 9 Network.queue9 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 10 Network.queue10 queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 11 Network.sink lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	3183 438871 0 507010 0 8968137.521928392418 13477 0 21 35346 185994
+1	442054 40186 0 506603 0 8963341.380308377126 1235 0 1 617 617
+2	482240 36341 0 506906 0 8967552.072705795941 1117 0 1 558 558
+3	518581 37112 0 506918 0 8967633.607512277661 1141 0 1 570 570
+4	555693 39487 0 506978 0 8967987.439763588679 1215 0 1 607 607
+5	595180 200693 0 507141 0 8969816.313419231578 6167 0 1 3083 3083
+6	795873 20327 0 506216 0 8959591.745043108466 625 0 1 312 312
+7	816200 19009 0 503268 0 8904231.779984858246 585 0 1 292 292
+8	835209 18421 0 505460 0 8944264.615008769681 567 0 1 283 283
+9	853630 19590 0 498506 0 8816187.452721093459 603 0 1 301 301
+10	873220 19332 0 506330 0 8960264.672728158524 577 0 1 288 288
+11	892552 370145 190 507255 5084.688809130395 8972204.097295306061 7803 743.18355779462 17452.801793924 30672711.334462 156273288352.01
+
