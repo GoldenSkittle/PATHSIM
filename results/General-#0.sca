@@ -1,0 +1,393 @@
+version 2
+run General-0-20180514-18:47:14-129188
+attr configname General
+attr datetime 20180514-18:47:14
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 129188
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.clone.changeMsgName false
+param **.source.numJobs 2000
+param **.source.interArrivalTime exponential(2000.0s)
+param **.queue10.capacity -1
+param **.queue9.capacity -1
+param **.queue8.capacity -1
+param **.queue7.capacity -1
+param **.queue6.capacity -1
+param **.queue5.capacity -1
+param **.queue4.capacity -1
+param **.queue3.capacity -1
+param **.queue2.capacity -1
+param **.queue1.capacity -1
+param **.queue.capacity -1
+param **.server10.serviceTime exponential(30.0s)
+param **.server9.serviceTime exponential(30.0s)
+param **.server8.serviceTime exponential(30.0s)
+param **.server7.serviceTime exponential(30.0s)
+param **.server6.serviceTime exponential(30.0s)
+param **.server5.serviceTime exponential(600.0s)
+param **.server4.serviceTime exponential(30.0s)
+param **.server3.serviceTime exponential(30.0s)
+param **.server2.serviceTime exponential(30.0s)
+param **.server1.serviceTime exponential(30.0s)
+param **.server.serviceTime exponential(600.0s)
+param **.delay10.delay exponential(450.0s)
+param **.delay9.delay exponential(90.0s)
+param **.delay8.delay exponential(30.0s)
+param **.delay7.delay exponential(30.0s)
+param **.delay6.delay exponential(90.0s)
+param **.delay5.delay exponential(90s)
+param **.delay4.delay exponential(30.0s)
+param **.delay3.delay exponential(30.0s)
+param **.delay2.delay exponential(90.0s)
+param **.delay1.delay exponential(450.0s)
+param **.delay.delay exponential(5.0s)
+
+scalar Network.source created:last 2000
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar Network.server busy:timeavg 0.27231485681455
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server1 busy:timeavg 0.014491905791425
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server2 busy:timeavg 0.014709960208458
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server3 busy:timeavg 0.014460058712598
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server4 busy:timeavg 0.014554659354066
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server5 busy:timeavg 0.29351077117384
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server6 busy:timeavg 0.014866677991002
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server7 busy:timeavg 0.014257390142408
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server8 busy:timeavg 0.014109956142713
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server9 busy:timeavg 0.015462197780111
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.server10 busy:timeavg 0.015133825518399
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.queue queueingTime:mean 730.32856776343
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue queueingTime:max 3155.5368747677
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue queueLength:timeavg 0.10196834546279
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue queueLength:max 5
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue1 queueingTime:mean 29.453335585887
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue1 queueingTime:max 74.138948124719
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue1 queueLength:timeavg 9.36243495074e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue1 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue1 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue2 queueingTime:mean 28.870417041937
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue2 queueingTime:max 120.51175298195
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue2 queueLength:timeavg 0.0001270681004956
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue2 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue2 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue3 queueingTime:mean 13.692324730759
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue3 queueingTime:max 32.889080319033
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue3 queueLength:timeavg 3.68282303496e-005
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue3 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue3 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue4 queueingTime:mean 22.564329862307
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue4 queueingTime:max 98.36959911251
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue4 queueLength:timeavg 0.00014345205141662
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue4 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue4 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue5 queueingTime:mean 765.10802636428
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue5 queueingTime:max 3605.8608292503
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue5 queueLength:timeavg 0.10869507477014
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue5 queueLength:max 4
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue5 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue6 queueingTime:mean 29.780988414596
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue6 queueingTime:max 177.22310128088
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue6 queueLength:timeavg 0.00029856159325136
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue6 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue6 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue7 queueingTime:mean 35.685984399343
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue7 queueingTime:max 259.58813842942
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue7 queueLength:timeavg 0.00028795365569126
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue7 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue7 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue8 queueingTime:mean 23.923879234268
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue8 queueingTime:max 96.26559444314
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue8 queueLength:timeavg 0.00018134445080626
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue8 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue8 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue9 queueingTime:mean 28.592081898934
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue9 queueingTime:max 137.64944930146
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue9 queueLength:timeavg 0.0002377035520254
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue9 queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue9 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue10 queueingTime:mean 33.215930358454
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue10 queueingTime:max 106.16489154427
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue10 queueLength:timeavg 0.00020304738712642
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue10 queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue10 dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.sink generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar Network.sink generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar Network.sink delaysVisited:mean 11
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Network.sink delaysVisited:max 11
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar Network.sink queuesVisited:mean 1.384
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Network.sink queuesVisited:max 12
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar Network.sink totalServiceTime:mean 1427.0361159906
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalServiceTime:max 5823.9427736968
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar Network.sink totalDelayTime:mean 1400.7854565495
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalDelayTime:max 6442.5996744692
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar Network.sink totalQueueingTime:mean 434.06402591918
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalQueueingTime:max 4172.318522919
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar Network.sink lifeTime:mean 3261.8855984593
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Network.sink lifeTime:max 11050.063947169
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+scalar Network.delay delayedJobs:timeavg 0.0024098703818877
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay delayedJobs:max 2
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay1 delayedJobs:timeavg 0.22772607743089
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay1 delayedJobs:max 4
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay2 delayedJobs:timeavg 0.044006483652373
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay2 delayedJobs:max 3
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay3 delayedJobs:timeavg 0.014283886368091
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay3 delayedJobs:max 2
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay4 delayedJobs:timeavg 0.014582973296225
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay4 delayedJobs:max 2
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay5 delayedJobs:timeavg 0.042801035492322
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay5 delayedJobs:max 2
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay6 delayedJobs:timeavg 0.043884219005277
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay6 delayedJobs:max 3
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay7 delayedJobs:timeavg 0.014916001962606
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay7 delayedJobs:max 3
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay8 delayedJobs:timeavg 0.014402907920139
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay8 delayedJobs:max 2
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay9 delayedJobs:timeavg 0.044642736779398
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay9 delayedJobs:max 3
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+scalar Network.delay10 delayedJobs:timeavg 0.22137854569981
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, timeavg"
+scalar Network.delay10 delayedJobs:max 5
+attr interpolationmode sample-hold
+attr title "number of delayed jobs, max"
+

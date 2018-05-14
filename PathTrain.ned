@@ -1,4 +1,3 @@
-import org.omnetpp.queueing.Clone;
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
@@ -13,13 +12,16 @@ import org.omnetpp.queueing.Clone;
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 //
+
+import org.omnetpp.queueing.Clone;
 import org.omnetpp.queueing.PassiveQueue;
 import org.omnetpp.queueing.Delay;
 import org.omnetpp.queueing.Queue;
 import org.omnetpp.queueing.Server;
 import org.omnetpp.queueing.Sink;
 import org.omnetpp.queueing.Source;
-
+import Clone_New;
+//import org.omnetpp.queueing.Clone;
 
 //
 // TODO documentation
@@ -175,6 +177,10 @@ network Network
         //		delay.out --> server.in++;
         //        queue.out++ --> delay.in++;
         //        source.out --> queue.in++;
+
+        server8.out --> delay9.in++;
+        delay9.out --> queue9.in++;
+        queue9.out++ --> server9.in++;
         queue10.out++ --> server10.in++;
         delay10.out --> queue10.in++;
         server9.out --> delay10.in++;
@@ -214,12 +220,8 @@ network Network
         queue.out++ --> server.in++;
         delay.out --> queue.in++;
         source.out --> delay.in++;
-        server8.out --> delay9.in++;
-        delay9.out --> queue9.in++;
-        queue9.out++ --> server9.in++;
-        server10.out --> clone.in++;
-        clone.out++ --> delay.in++;
-        clone.out++ --> sink.in++;
+
+        server10.out --> sink.in++;
 }
 
 

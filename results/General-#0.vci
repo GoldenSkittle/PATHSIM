@@ -1,23 +1,23 @@
-                                                                
+file 184039 1526338041                                          
 version 2
-run General-0-20180514-14:35:17-63224
+run General-0-20180514-18:47:14-129188
 attr configname General
-attr datetime 20180514-14:35:17
+attr datetime 20180514-18:47:14
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 63224
+attr processid 129188
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 param **.clone.changeMsgName false
-param **.source.numJobs 4
-param **.source.interArrivalTime exponential(840.0s)
+param **.source.numJobs 2000
+param **.source.interArrivalTime exponential(2000.0s)
 param **.queue10.capacity -1
 param **.queue9.capacity -1
 param **.queue8.capacity -1
@@ -28,28 +28,29 @@ param **.queue4.capacity -1
 param **.queue3.capacity -1
 param **.queue2.capacity -1
 param **.queue1.capacity -1
-param **.server10.serviceTime exponential(60.0s)
-param **.server9.serviceTime exponential(60.0s)
-param **.server8.serviceTime exponential(60.0s)
-param **.server7.serviceTime exponential(60.0s)
-param **.server6.serviceTime exponential(60.0s)
+param **.queue.capacity -1
+param **.server10.serviceTime exponential(30.0s)
+param **.server9.serviceTime exponential(30.0s)
+param **.server8.serviceTime exponential(30.0s)
+param **.server7.serviceTime exponential(30.0s)
+param **.server6.serviceTime exponential(30.0s)
 param **.server5.serviceTime exponential(600.0s)
-param **.server4.serviceTime exponential(60.0s)
-param **.server3.serviceTime exponential(60.0s)
-param **.server2.serviceTime exponential(60.0s)
-param **.server1.serviceTime exponential(60.0s)
+param **.server4.serviceTime exponential(30.0s)
+param **.server3.serviceTime exponential(30.0s)
+param **.server2.serviceTime exponential(30.0s)
+param **.server1.serviceTime exponential(30.0s)
 param **.server.serviceTime exponential(600.0s)
-param **.delay10.delay exponential(60.0s)
-param **.delay9.delay exponential(60.0s)
-param **.delay8.delay exponential(60.0s)
-param **.delay7.delay exponential(60.0s)
-param **.delay6.delay exponential(60.0s)
-param **.delay5.delay exponential(60.0s)
-param **.delay4.delay exponential(60.0s)
-param **.delay3.delay exponential(60.0s)
-param **.delay2.delay exponential(60.0s)
-param **.delay1.delay exponential(60.0s)
-param **.delay.delay exponential(60.0s)
+param **.delay10.delay exponential(450.0s)
+param **.delay9.delay exponential(90.0s)
+param **.delay8.delay exponential(30.0s)
+param **.delay7.delay exponential(30.0s)
+param **.delay6.delay exponential(90.0s)
+param **.delay5.delay exponential(90s)
+param **.delay4.delay exponential(30.0s)
+param **.delay3.delay exponential(30.0s)
+param **.delay2.delay exponential(90.0s)
+param **.delay1.delay exponential(450.0s)
+param **.delay.delay exponential(5.0s)
 
 vector 0 Network.queue queueLength:vector ETV
 attr interpolationmode sample-hold
@@ -88,15 +89,16 @@ vector 11 Network.sink lifeTime:vector ETV
 attr interpolationmode none
 attr title "lifetime of arrived jobs, vector"
 attr unit s
-0	3225 68250 0 104859 0 1618165.317316014532 2191 0 3 2359 4143
-1	71475 7151 0 104853 0 1618006.426019370226 229 0 2 126 138
-2	78626 7722 0 103491 0 1597905.947471101925 249 0 2 138 152
-3	86348 7338 0 101795 0 1569448.24877657921 237 0 2 126 134
-4	93686 6732 0 102866 0 1586703.890060362241 217 0 2 124 140
-5	100418 65951 0 104619 0 1614699.037335186681 2119 0 3 2217 3803
-6	166369 7097 0 104634 0 1614784.178106591271 229 0 2 122 130
-7	173466 7826 0 104654 0 1614912.763014236717 253 0 2 154 182
-8	181292 7585 0 102757 0 1585470.198480703214 245 0 2 132 142
-9	188877 6542 0 102083 0 1573033.167554849685 211 0 2 115 125
-10	195419 6890 0 104701 0 1615159.752386348408 215 0 2 109 111
-11	202309 84660 139 104839 4037.076873703588 1617251.850466581841 1839 3278.2692123016 1615342.3580723 1481328521.516 1.5833854673625e+015
+0	3258 36143 0 113834 0 4082970.95860805578 1143 0 5 963 1511
+1	39401 820 0 76425 0 2710999.020051941933 27 0 2 15 17
+2	40221 1147 0 89294 0 3196269.133654733676 37 0 1 18 18
+3	41368 701 0 113867 0 4083380.449707131746 23 0 1 11 11
+4	42069 1659 0 103448 0 3720739.690319281643 53 0 1 26 26
+5	43728 36738 0 113185 0 4066465.078538465612 1163 0 4 961 1501
+6	80466 2615 0 109651 0 3909452.103034299636 83 0 2 43 45
+7	83081 2104 0 107696 0 3847382.947782470034 67 0 2 35 37
+8	85185 1986 0 105106 0 3764054.055532856891 63 0 1 31 31
+9	87171 2155 0 107295 0 3839560.223067142704 69 0 2 38 42
+10	89326 1655 0 112348 0 4034864.300564443756 51 0 1 25 25
+11	90981 93056 116 114000 6512.872111274024 4088465.495560939079 2000 744.64188053365 11050.063947169 6523771.1969186 24640279606.454
+
