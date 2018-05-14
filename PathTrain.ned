@@ -1,3 +1,4 @@
+import org.omnetpp.queueing.Clone;
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
@@ -97,7 +98,7 @@ network Network
             @display("p=1173.378,716.822");
         }
         sink: Sink {
-            @display("p=1317.324,540.888");
+            @display("p=1347.858,375.132");
         }
         delay: Delay {
             @display("p=180.296,78.516");
@@ -131,6 +132,9 @@ network Network
         }
         delay10: Delay {
             @display("p=1173.378,884.032");
+        }
+        clone: Clone {
+            @display("p=1173.378,375.132");
         }
     connections:
         //        server4.out --> queue5.in++;
@@ -213,7 +217,9 @@ network Network
         server8.out --> delay9.in++;
         delay9.out --> queue9.in++;
         queue9.out++ --> server9.in++;
-        server10.out --> sink.in++;
+        server10.out --> clone.in++;
+        clone.out++ --> delay.in++;
+        clone.out++ --> sink.in++;
 }
 
 
