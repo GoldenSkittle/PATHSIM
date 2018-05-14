@@ -3,6 +3,7 @@
 	<name>PathSim</name>
 	<comment></comment>
 	<projects>
+		<project>queueinglib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
